@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<!-- Local Fonts -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Interactive card details form</title>
 
@@ -15,32 +18,32 @@
   </style>
 </head>
 <body>
-
 <section class="container">
   <section class="banner">
-    img
+
   </section>
   <section class="form-holder">
     <form action="#">
-      <label for="">cardholder name</label>
-      <input type="text" placeholder="e.g Jane Apleseed">
+      <label for="">cardholder name</label><br>
+      <input type="text" placeholder="e.g Jane Apleseed"><br>
       <label for="">card number</label><br>
-      <input type="number" placeholder="e.g 1234 5678 9123 0000">
+      <input type="number" placeholder="e.g 1234 5678 9123 0000"><br>
 
-     <label for="">exp. date(mm/yy)</label>
-     <input type="text" placeholder="mm">
-     <input type="text" placeholder="yy">
+     <label for="" id="exp">exp.date(mm/yy)</label>
+     <label for="" class="cvc">cvc</label><br>
+     <input type="text" placeholder="mm" id="month">
+     <input type="text" placeholder="yy" id="year">
 
-     <label for="">cvc</label>
-     <input type="number" placeholder="e.g 123">
+     
+     <input type="number" placeholder="e.g 123" class="cvc"><br>
      <button type="submit">confirm</button>
     </form>
   </section>
 </section>
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
