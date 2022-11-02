@@ -48,7 +48,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+#card-holder {
+  position: relative;
+  #card-back {
+    width: 73%;
+position: absolute;
+top: -204px;
+right: 17px;
+z-index: 1;
+  }
+  #card-front {
+width: 73%;
+position: absolute;
+top: -110px;
+left: 17px;
+z-index: 2;
+  }
+}
 .form-holder {
   padding: 150px 0 30px;
   margin: 0 25px;
@@ -109,7 +125,7 @@ input:focus {
     }
     button:hover {
       cursor: pointer;
-      background-color: #2e214e;
+      background-color: #3d2c69;
     }
     button:focus {
       background-color: #451b3d;
