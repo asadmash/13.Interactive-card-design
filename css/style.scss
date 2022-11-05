@@ -9,6 +9,7 @@
 
 // files import
 @import "variables";
+@import "responsive";
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -35,8 +36,8 @@ body {
 }
 
 .container {
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
 }
@@ -48,23 +49,76 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+// CARD-HOLDER SECTION
 #card-holder {
   position: relative;
+  max-width: 450px;
+margin: 0 auto;
+width: 100%;
+
   #card-back {
     width: 73%;
-position: absolute;
-top: -204px;
-right: 17px;
-z-index: 1;
+    height: 155px;
+    position: absolute;
+    top: -204px;
+    right: 17px;
+    z-index: 1;
   }
   #card-front {
-width: 73%;
-position: absolute;
-top: -110px;
-left: 17px;
-z-index: 2;
+    background: url(../images/bg-card-front.png);
+    background-size: cover;
+    width: 73%;
+    height: 155px;
+    position: absolute;
+    top: -110px;
+    left: 17px;
+    z-index: 2;
+    display: block;
+    color: #fff;
+    border-radius: 6px;
+
+    #circle {
+      height: 30px;
+width: 85px;
+display: flex;
+gap: 7px;
+align-items: center;
+margin-left: 12px;
+margin-bottom: 34px;
+margin-top: 6px;
+
+      #fill-circle {
+        width: 35px;
+        height: 35px;
+        display: block;
+        background: #fff;
+        border-radius: 50%;
+      }
+
+      #unfill-circle {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: 50%;
+      }
+    }
+
+    .card-num {
+      margin-left: 11px;
+      font-size: 22px;
+    }
+
+    .info {
+      display: flex;
+      margin: 18px 12px;
+      justify-content: space-between;
+    }
   }
 }
+
+// FORM-HOLDER SECTION
 .form-holder {
   padding: 150px 0 30px;
   margin: 0 25px;
