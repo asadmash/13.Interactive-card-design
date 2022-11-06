@@ -9,7 +9,7 @@
 
 // files import
 @import "variables";
-@import "responsive";
+
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -118,6 +118,7 @@ margin-top: 6px;
   }
 }
 
+
 // FORM-HOLDER SECTION
 .form-holder {
   padding: 150px 0 30px;
@@ -186,3 +187,7 @@ input:focus {
     }
   }
 }
+
+
+//MEDIA QUERIES
+@import "responsive"; 
