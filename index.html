@@ -9,6 +9,9 @@
   <!-- StyleSheet -->
   <link rel="stylesheet" href="css/style.css">
   
+  <!-- JavaScript -->
+  <script src="js/script.js" defer></script>
+  
   <title>Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -42,17 +45,21 @@
   <section class="form-holder">
     <form action="#">
       <label for="">cardholder name</label><br>
-      <input type="text" placeholder="e.g Jane Apleseed"><br>
+      <input id="name" type="text" placeholder="e.g Jane Apleseed"><br>
+      <span id="name-err"></span>
       <label for="">card number</label><br>
-      <input type="number" placeholder="e.g 1234 5678 9123 0000"><br>
-
+      <input id="number" type="number" placeholder="e.g 1234 5678 9123 0000"><br>
+      <span id="num-err"></span>
      <label for="" id="exp">exp.date(mm/yy)</label>
-     <label for="" class="cvc">cvc</label><br>
+     <label for="" id="cvc">cvc</label><br>
      <input type="text" placeholder="mm" id="month">
+     <span id="mm-err"></span>
      <input type="text" placeholder="yy" id="year">
-
+      <span id="yy-err"></span>
      
-     <input type="number" placeholder="e.g 123" class="cvc"><br>
+     <input id="cvc" type="number" placeholder="e.g 123" class="cvc">
+    <span id="cvc-err"></span> 
+     <br>
      <button type="submit">confirm</button>
     </form>
   </section>
