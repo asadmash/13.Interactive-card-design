@@ -1,73 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<!-- Local Fonts -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- Local Fonts -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-- StyleSheet -->
-  <link rel="stylesheet" href="css/style.css">
-  
-  <!-- JavaScript -->
-  <script src="js/script.js" defer></script>
-  
-  <title>Interactive card details form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-<section class="container">
-  <section class="banner">
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
 
-  </section>
-  <section id="card-holder">
-    <img src="./images/bg-card-back.png" alt="card-back" id="card-back">
-    <div id="card-front">
-     <div id="circle">
-      <span id="fill-circle"></span>
-      <span id="unfill-circle"></span>
-     </div>
-     <div class="card-num">
-      0000 0000 0000 0000
-     </div>
-     <div class="info">
-      <div class="name">Jane Apleseed</div>
-      <div class="num">000</div>
-     </div>
-      
-    </div>
-  </section>
-  <section class="form-holder">
-    <form action="#">
-      <label for="">cardholder name</label><br>
-      <input id="name" type="text" placeholder="e.g Jane Apleseed"><br>
-      <span id="name-err"></span>
-      <label for="">card number</label><br>
-      <input id="number" type="number" placeholder="e.g 1234 5678 9123 0000"><br>
-      <span id="num-err"></span>
-     <label for="" id="exp">exp.date(mm/yy)</label>
-     <label for="" id="cvc">cvc</label><br>
-     <input type="text" placeholder="mm" id="month">
-     <span id="mm-err"></span>
-     <input type="text" placeholder="yy" id="year">
-      <span id="yy-err"></span>
-     
-     <input id="cvc" type="number" placeholder="e.g 123" class="cvc">
-    <span id="cvc-err"></span> 
-     <br>
-     <button type="submit">confirm</button>
-    </form>
-  </section>
-</section>
+    <title>Interactive card details form</title>
 
-  <!-- <div class="attribution">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <section class="banner"></section>
+      <section id="card-holder">
+        <img src="./images/bg-card-back.png" alt="card-back" id="card-back" />
+        <div id="card-front">
+          <div id="circle">
+            <span id="fill-circle"></span>
+            <span id="unfill-circle"></span>
+          </div>
+          <div class="card-num">0000 0000 0000 0000</div>
+          <div class="info">
+            <div class="name">Jane Apleseed</div>
+            <div class="num">000</div>
+          </div>
+        </div>
+      </section>
+      <section class="form-holder">
+        <form action="#" id="signup">
+          <div class="form-field">
+            <label for="username">cardholder name</label><br />
+            <input
+              id="name"
+              type=""
+              placeholder="e.g Jane Apleseed"
+              autocomplete="on"
+            /><br />
+            <small></small>
+          </div>
+
+          <div class="form-field">
+            <label for="">card number</label><br />
+            <input
+              id="number"
+              type=""
+              placeholder="e.g 1234 5678 9123 0000"
+              autocomplete="on"
+            /><br />
+            <small id="num-err"></small>
+          </div>
+
+          <div class="wrapper">
+            <div class="sub-wrapper">
+              <label for="" id="exp">exp.date(mm/yy)</label><br />
+              <div class="form-field month-year">
+                <div id="input-m">
+                  <input
+                    type=""
+                    placeholder="mm"
+                    id="month"
+                    autocomplete="on"
+                  />
+                  <small id="mm-err"></small>
+                </div>
+                <div id="input-y">
+                  <input type="" placeholder="yy" id="year" autocomplete="on" />
+                  <small id="yy-err"></small>
+                </div>
+                <!-- <small id="yy-err"></small> -->
+              </div>
+            </div>
+            <div class="sub-wrapper">
+              <label for="">cvc</label><br />
+              <div class="form-field">
+                <input
+                  id="cvc"
+                  type="number"
+                  placeholder="e.g 123"
+                  class="cvc"
+                  autocapitalize="on"
+                />
+                <small id="cvc-err"></small>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">confirm</button>
+        </form>
+      </section>
+    </section>
+
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
+  </body>
 </html>

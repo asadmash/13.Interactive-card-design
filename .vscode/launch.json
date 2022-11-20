@@ -5,31 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Edge",
+            "type": "chrome",
             "request": "launch",
-            "type": "msedge",
-            "url": "http://localhost:8080",
-            "webRoot": "d:\MY PROJECTS\FRONTEND MENTOR CHALLANGE\JS WEB PROJECT"
-        },
-        {
-            "type": "msedge",
-            "request": "launch",
-            "name": "Launch Edge against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "name": "Open index.html",
+            "file": "d:\\MY PROJECTS\\FRONTEND MENTOR CHALLANGE\\JS WEB PROJECT\\13.Interactive card details form\\index.html"
         }
-
-
-
-
-        // {
-        //     "type": "msedge",
-        //     "request": "launch",
-        //     "name": "Open index.html",
-        //     "runtimeArgs": [
-        //         "--remote-debugging-port=9222"
-        //     ],
-        //     "file": "d:\\MY PROJECTS\\FRONTEND MENTOR CHALLANGE\\JS WEB PROJECT\\13.Interactive card details form\\index.html"
-        // }
     ]
 }

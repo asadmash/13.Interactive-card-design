@@ -30,9 +30,9 @@ body {
   box-sizing: border-box;
   height: 100vh;
   width: 100%;
-  font-family: "dejavu-regular";
-  overflow-x: hidden;
-}
+font-family: "dejavu-regular";
+/* overflow-x: hidden; */
+} 
 
 .container {
   display: flex;
@@ -128,26 +128,14 @@ body {
     height: 100%;
     width: 325px;
     .form-field {
-      display: block;
       margin-bottom: 20px;
     }
 
     .wrapper {
       display: flex;
 
-      .sub-wrapper {
-        .month-year {
-          display: flex;
-          gap: 8px;
-          #input-m,
-          #input-y {
-            width: 30%;
-          }
-          #month,
-          #year {
-            width: 100%;
-          }
-        }
+      .subwrapper {
+        display: flex;
       }
     }
 
@@ -190,7 +178,8 @@ body {
       font-size: 14px;
     }
     #cvc {
-      width: 95%;
+      width: 43%;
+      margin-left: 8%;
       font-size: 14px;
     }
 

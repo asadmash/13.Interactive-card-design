@@ -116,6 +116,28 @@ body {
   height: 100%;
   width: 325px;
 }
+.form-holder form .form-field {
+  display: block;
+  margin-bottom: 20px;
+}
+.form-holder form .wrapper {
+  display: flex;
+}
+.form-holder form .wrapper .sub-wrapper .month-year {
+  display: flex;
+  gap: 8px;
+}
+.form-holder form .wrapper .sub-wrapper .month-year #input-m,
+.form-holder form .wrapper .sub-wrapper .month-year #input-y {
+  width: 30%;
+}
+.form-holder form .wrapper .sub-wrapper .month-year #month,
+.form-holder form .wrapper .sub-wrapper .month-year #year {
+  width: 100%;
+}
+.form-holder form .error > small {
+  color: red;
+}
 .form-holder form label {
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -124,7 +146,6 @@ body {
 }
 .form-holder form input {
   width: 98%;
-  margin-bottom: 20px;
   height: 30px;
   display: inline-block;
   border-radius: 1px;
@@ -133,7 +154,7 @@ body {
 .form-holder form input:focus {
   outline: none !important;
   border: 1px solid hsl(278deg, 68%, 11%);
-  box-shadow: 0 0 10px #719ECE;
+  box-shadow: 0 0 10px #719ece;
 }
 .form-holder form #month,
 .form-holder form #year {
@@ -142,9 +163,8 @@ body {
 .form-holder form #exp {
   font-size: 14px;
 }
-.form-holder form .cvc {
-  width: 43%;
-  margin-left: 8%;
+.form-holder form #cvc {
+  width: 95%;
   font-size: 14px;
 }
 .form-holder form button {
