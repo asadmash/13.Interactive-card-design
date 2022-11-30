@@ -1,5 +1,4 @@
-console.log('working');
-const nameEl = document.querySelector("name");
+const nameEl = document.querySelector("#name");
 const numberEl = document.querySelector("#number");
 const monthExpEl = document.querySelector("#month");
 const yearExpEl = document.querySelector("#year");
@@ -133,5 +132,3 @@ function checkCvc() {
   let valid = false;
 }
 
-
-console.log('working');
