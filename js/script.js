@@ -1,3 +1,4 @@
+console.log('working');
 const nameEl = document.querySelector("#name");
 const numberEl = document.querySelector("#number");
 const monthExpEl = document.querySelector("#month");
